@@ -35,15 +35,15 @@ Game is described as a sequence of steps.
 2.Shuffle the deck of cards.
 3. Create two players named Player 1 and Player 2.
 4. Deal all of the cards to the two players.
-5. Manage the turns, stopping when one player has insufficient cards to continue or after 100 turns.
-	5.1 Ensure that both players have at least one card.Otherwise stop the game.
-	5.2 Have each player produce one card and compare the two cards.
-	5.3 If one card is higher in rank, give the cards to the player with the higher card and end the turn.
-	5.4 If the cards are of the same rank, we have a war.
-		5.4.1 Check that each player has enough cards to continue. Otherwise end the game.
-		5.4.2 Each player produces a number of cards equal to the rank of cards that caused the tie.
-		5.4.3 If the last cards played are of different rank, give all the cards played in this turn to the winning player and end the turn.
-		5.4.4 If the last cards played are of equal rank, go back to step 5.4.1.
+5. Manage the turns, stopping when one player has insufficient cards to continue or after 1000 turns.
+5.1 Ensure that both players have at least one card.Otherwise stop the game.
+5.2 Have each player produce one card and compare the two cards.
+5.3 If one card is higher in rank, give the cards to the player with the higher card and end the turn.
+5.4 If the cards are of the same rank, we have a war.
+5.4.1 Check that each player has enough cards to continue. Otherwise end the game.
+5.4.2 Each player produces a number of cards equal to the rank of cards that caused the tie.
+5.4.3 If the last cards played are of different rank, give all the cards played in this turn to the winning player and end the turn.
+5.4.4 If the last cards played are of equal rank, go back to step 5.4.1.
     
  A Pile object holds an array to contain its cards.
   *Two instance variables indicate the portion of the array that contains the cards belonging to the pile.
